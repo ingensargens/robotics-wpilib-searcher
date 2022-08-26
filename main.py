@@ -6,9 +6,9 @@ from discord.ext import commands
 
 
 
-# txt = open('pass.txt', 'r')
-# password = txt.read()
-# txt.close()
+txt = open('pass.txt', 'r')
+password = txt.read()
+txt.close()
 
 intents = discord.Intents.default()
 intents.members = True
@@ -55,4 +55,4 @@ async def search(ctx: commands.Context, target: str):
 
 
 
-bot.run('MTAxMjQ1MTY1MTk1NDY4MzkwNg.GO8Y4a.l1P_kFAhzFNFJzUsxU0RiDNgtuLvC1NuI4mhrw')
+bot.run(password)
